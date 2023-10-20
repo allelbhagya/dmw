@@ -25,30 +25,18 @@ A data warehouse is a centralized repository that stores data from various sourc
     
     Q2
     
-    1. **Cloud Data Warehousing:**
-        - Many organizations are shifting from on-premises data warehouses to cloud-based solutions. Cloud data warehouses offer scalability, flexibility, and cost-effectiveness, allowing organizations to pay for the resources they use.
-    2. **Serverless Data Warehousing:**
-        - Serverless computing models are gaining popularity. In a serverless architecture, users don't need to provision or manage servers; they only pay for the computing resources used during query execution.
-    3. **Data Lakes Integration:**
-        - Integration of data warehouses with data lakes is becoming more common. This allows organizations to combine structured and unstructured data for comprehensive analysis.
-    4. **Real-Time Data Processing:**
-        - There's a growing demand for real-time or near-real-time data processing capabilities. Data warehouses are evolving to support the ingestion and analysis of streaming data for more timely insights.
-    5. **Machine Learning Integration:**
-        - Integrating machine learning (ML) capabilities into data warehouses allows organizations to perform advanced analytics and predictive modeling directly within the data warehouse environment.
-    6. **Data Governance and Compliance:**
-        - With increasing concerns about data privacy and regulatory compliance, data governance has become a critical aspect of data warehousing. This involves managing data quality, ensuring security, and adhering to regulations.
-    7. **Augmented Analytics:**
-        - Augmented analytics combines machine learning and natural language processing to automate data preparation, insight discovery, and sharing. This trend aims to make analytics more accessible to users with varying levels of technical expertise.
-    8. **Data Mesh Architecture:**
-        - The concept of a data mesh, as introduced by Zhamak Dehghani, promotes the decentralization of data ownership and architecture. This approach advocates for domain-oriented decentralized data platforms.
-    9. **Containerization and Microservices:**
-        - Containerization technologies like Docker and orchestration tools like Kubernetes are being used to deploy and manage data warehouse workloads in a more scalable and efficient manner.
-    10. **Hybrid Data Warehousing:**
-        - Some organizations are adopting hybrid data warehouse solutions that combine on-premises and cloud-based components. This approach allows for flexibility in data storage and processing.
-    11. **Data Collaboration Platforms:**
-        - Platforms that enable collaboration on data analytics and sharing insights are gaining traction. These platforms facilitate teamwork among data professionals, analysts, and business users.
-    12. **Automated Data Warehousing:**
-        - Automation is being applied to various aspects of data warehousing, including data integration, schema design, and performance tuning. Automation helps streamline processes and reduce manual intervention.
+1. Multiple data types
+2. Data Visualization
+3. parallel processing
+4. query tools
+5. browser tools
+6. data fusion
+7. agent technology
+8. syndicated data
+9. multidimensional analysis
+10. data warehouse and ERP
+11. active data warehousing
+12. data warehousig and CRM
     
     Q3
     
