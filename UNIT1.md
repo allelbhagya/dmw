@@ -1,0 +1,97 @@
+Q1
+
+![Data-warehouse-architecture](https://github.com/allelbhagya/dmw/assets/80905783/c4d35035-48b9-4900-b6e7-f78164e1232e)
+
+A data warehouse is a centralized repository that stores data from various sources and facilitates the retrieval and analysis of that data to support business intelligence and decision-making processes. The architecture of a data warehouse typically consists of several components that work together to ensure data is collected, transformed, stored, and made available for analysis. Here are the key components of a typical data warehouse architecture:
+
+1. **Source Systems:**
+    - *Operational Databases:* These are the systems where day-to-day transactional data is generated and stored, such as sales transactions, customer interactions, etc.
+    - *External Data Sources:* Data may also come from external sources, such as third-party data providers, industry databases, or public sources.
+2. **Data Extraction:**
+    - *ETL (Extract, Transform, Load) Processes:* ETL processes are responsible for extracting data from source systems, transforming it into a format suitable for analysis, and loading it into the data warehouse. This ensures that data in the warehouse is consistent and conforms to a common structure.
+3. **Staging Area:**
+    - *Staging Database:* Extracted data is often first loaded into a staging area or a staging database. This serves as an intermediate storage where data can be cleansed and transformed before being loaded into the data warehouse.
+4. **Data Warehouse Database:**
+    - *Data Warehouse Database:* This is the core component where the transformed and cleansed data is stored. It is specifically designed for efficient querying and reporting, often using a multidimensional model (like star or snowflake schema).
+5. **Data Mart:**
+    - *Data Marts:* Data marts are subsets of the data warehouse that are focused on specific business lines, departments, or subject areas. They are designed to serve the needs of a particular group of users.
+6. **Metadata Repository:**
+    - *Metadata:* Metadata includes information about the data, such as its source, meaning, relationships, and transformation processes. A metadata repository is crucial for managing and documenting the data warehouse environment.
+7. **OLAP (Online Analytical Processing):**
+    - *OLAP Cube:* OLAP cubes are multidimensional structures that facilitate fast and complex queries against the data warehouse. They allow users to analyze data from different dimensions and hierarchies.
+8. **Data Access Tools:**
+    - *Query and Reporting Tools:* These tools allow end-users to interact with the data warehouse, run queries, and generate reports.
+    - *Data Visualization Tools:* Tools for creating charts, graphs, and dashboards to present data in a visually understandable format.
+    
+    Q2
+    
+    1. **Cloud Data Warehousing:**
+        - Many organizations are shifting from on-premises data warehouses to cloud-based solutions. Cloud data warehouses offer scalability, flexibility, and cost-effectiveness, allowing organizations to pay for the resources they use.
+    2. **Serverless Data Warehousing:**
+        - Serverless computing models are gaining popularity. In a serverless architecture, users don't need to provision or manage servers; they only pay for the computing resources used during query execution.
+    3. **Data Lakes Integration:**
+        - Integration of data warehouses with data lakes is becoming more common. This allows organizations to combine structured and unstructured data for comprehensive analysis.
+    4. **Real-Time Data Processing:**
+        - There's a growing demand for real-time or near-real-time data processing capabilities. Data warehouses are evolving to support the ingestion and analysis of streaming data for more timely insights.
+    5. **Machine Learning Integration:**
+        - Integrating machine learning (ML) capabilities into data warehouses allows organizations to perform advanced analytics and predictive modeling directly within the data warehouse environment.
+    6. **Data Governance and Compliance:**
+        - With increasing concerns about data privacy and regulatory compliance, data governance has become a critical aspect of data warehousing. This involves managing data quality, ensuring security, and adhering to regulations.
+    7. **Augmented Analytics:**
+        - Augmented analytics combines machine learning and natural language processing to automate data preparation, insight discovery, and sharing. This trend aims to make analytics more accessible to users with varying levels of technical expertise.
+    8. **Data Mesh Architecture:**
+        - The concept of a data mesh, as introduced by Zhamak Dehghani, promotes the decentralization of data ownership and architecture. This approach advocates for domain-oriented decentralized data platforms.
+    9. **Containerization and Microservices:**
+        - Containerization technologies like Docker and orchestration tools like Kubernetes are being used to deploy and manage data warehouse workloads in a more scalable and efficient manner.
+    10. **Hybrid Data Warehousing:**
+        - Some organizations are adopting hybrid data warehouse solutions that combine on-premises and cloud-based components. This approach allows for flexibility in data storage and processing.
+    11. **Data Collaboration Platforms:**
+        - Platforms that enable collaboration on data analytics and sharing insights are gaining traction. These platforms facilitate teamwork among data professionals, analysts, and business users.
+    12. **Automated Data Warehousing:**
+        - Automation is being applied to various aspects of data warehousing, including data integration, schema design, and performance tuning. Automation helps streamline processes and reduce manual intervention.
+    
+    Q3
+    
+    A **Data Mart** is a subset of a directorial information store, generally oriented to a specific purpose or primary data subject which may be distributed to provide business needs. Data Marts are analytical record stores designed to focus on particular business functions for a specific community within an organization. Data marts are derived from subsets of data in a data warehouse, though in the bottom-up data warehouse design methodology, the data warehouse is created from the union of organizational data marts.
+    
+    The fundamental use of a data mart is **Business Intelligence (BI)** applications. **BI** is used to gather, store, access, and analyze record. It can be used by smaller businesses to utilize the data they have accumulated since it is less expensive than implementing a data warehouse.
+    
+
+    
+    # Reasons for creating a data mart
+    
+    - Creates collective data by a group of users
+    - Easy access to frequently needed data
+    - Ease of creation
+    - Improves end-user response time
+    - Lower cost than implementing a complete data warehouses
+    - Potential clients are more clearly defined than in a comprehensive data warehouse
+    - It contains only essential business data and is less cluttered.
+    
+    # Types of Data Marts
+    
+    There are mainly two approaches to designing data marts. These approaches are
+    
+    - Dependent Data Marts
+    - Independent Data Marts
+    
+    difference between data warehouse and data mart
+    
+    | Data Warehouse | Data Mart |
+    | --- | --- |
+    | Data warehouse is a Centralised system. | While it is a decentralised system. |
+    | In data warehouse, lightly denormalization takes place. | While in Data mart, highly denormalization takes place. |
+    | Data warehouse is top-down model. | While it is a bottom-up model. |
+    | To built a warehouse is difficult. | While to build a mart is easy. |
+    | In data warehouse, Fact constellation schema is used. | While in this, Star schema and snowflake schema are used. |
+    | Data Warehouse is flexible. | While it is not flexible. |
+    | Data Warehouse is the data-oriented in nature. | While it is the project-oriented in nature. |
+    | Data Ware house has long life. | While data-mart has short life than warehouse. |
+    | In Data Warehouse, Data are contained in detail form. | While in this, data are contained in summarized form. |
+    | Data Warehouse is vast in size. | While data mart is smaller than warehouse. |
+    | The Data Warehouse might be somewhere between 100 GB and 1 TB+ in size. | The Size of Data Mart is less than 100 GB. |
+    | The time it takes to implement a data warehouse might range from months to years. | The Data Mart deployment procedure is time-limited to a few months. |
+    | It uses a lot of data and has comprehensive operational data. | Operational data are not present in Data Mart. |
+    | It collects data from various data sources. | It generally stores data from a data warehouse. |
+    | Long time for processing the data because of large data. | Less time for processing the data because of handling only a small amount of data. |
+    | Complicated design process of creating schemas and views. | Easy design process of creating schemas and views. |
